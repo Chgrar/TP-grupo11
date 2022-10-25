@@ -38,7 +38,8 @@ body{
 
 .textos{
     z-index: 0;
-    font-size: 4rem;
+    /*font-size: 4rem;*/
+    font-size: 5vw;
     }
 
 
@@ -68,14 +69,18 @@ body{
 
 header p{
     color: white;
-    font-size: xx-large;
+    /*font-size: xx-large;*/
+    font-size: 3vw;
     }
 
 
 .grid-container{
     display: grid;
     grid-template-columns: 45%  45%;
-    }
+    /*
+    grid-template-columns: repeat(auto-fit,minmax(360px, 2fr));
+    */    
+}
 
 /**{margin: 5px;
     border: 5px;}*/
@@ -107,10 +112,12 @@ header{
        background-color: black;
        justify-content: space-between;
        align-items: center;
+       background-size: auto;
         }
     
-ul{
+header ul{
         display: flex;
+        flex-wrap: wrap;
         }
     
 li{
@@ -128,15 +135,15 @@ li{
 li:hover{
         padding: 8px;
         transition-property: all;
-        transition-duration: 1s;
-        transition-delay: 0.5s;
+        transition-duration: 0.1s;
+        transition-delay: 0.05s;
         transition-timing-function: ease-in;
         }
     
 header img{
         border-radius: 50%;
-        max-width: 120px;
-        max-height: 120px;
+        max-width: 5rem;
+        max-height: 5rem;
         }
     
 a{
@@ -144,9 +151,13 @@ a{
        color: white;
         }
     
-a:hover{color: rgba(48, 49, 50, 0.288);
-             border-radius: 30%;
+a:hover{color: black;
+             border-radius: 10%;
         }
+
+footer a:hover{color: gray;
+            border-radius: 10%;
+       }
 
 footer{
         background-color: black;
@@ -169,5 +180,26 @@ footer a{
         padding: 4px;
         }
     
-
+@media screen and (max-width:720px){
+    .textos{
+        z-index: 0;
+        font-size: 2rem;
+        }
+    header p{
+        color: white;
+            /*font-size: xx-large;*/
+        font-size: 2vw;
+        }
+}
+@media screen and (max-width:500px){
+    .textos{
+        z-index: 0;
+        font-size: 1rem;
+        }
+    header p{
+        color: white;
+            /*font-size: xx-large;*/
+        font-size: 1vw;
+        }
+}
     
