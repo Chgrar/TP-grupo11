@@ -46,7 +46,7 @@ body{
 
 .grid-item{
     display: grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 1fr 1fr;
     border: 1px solid black;
     border-radius: 5%;
     box-shadow: 0px 10px 10px -6px black;
@@ -69,7 +69,6 @@ body{
 
 header p{
     color: white;
-    /*font-size: xx-large;*/
     font-size: 3vw;
     }
 
@@ -77,9 +76,8 @@ header p{
 .grid-container{
     display: grid;
     grid-template-columns: 45%  45%;
-    /*
-    grid-template-columns: repeat(auto-fit,minmax(360px, 2fr));
-    */    
+    
+       
 }
 
 /**{margin: 5px;
@@ -152,8 +150,21 @@ a{
         }
     
 a:hover{color: black;
-             border-radius: 10%;
+        border-radius: 10%;
         }
+
+.a-contact{
+    color: white;
+}
+
+.a-contact:hover{
+    color: black;
+    border-radius: 10%;
+}
+
+.center{
+    text-align: center;
+}
 
 footer a:hover{color: gray;
             border-radius: 10%;
@@ -180,26 +191,5 @@ footer a{
         padding: 4px;
         }
     
-@media screen and (max-width:720px){
-    .textos{
-        z-index: 0;
-        font-size: 2rem;
-        }
-    header p{
-        color: white;
-            /*font-size: xx-large;*/
-        font-size: 2vw;
-        }
-}
-@media screen and (max-width:500px){
-    .textos{
-        z-index: 0;
-        font-size: 1rem;
-        }
-    header p{
-        color: white;
-            /*font-size: xx-large;*/
-        font-size: 1vw;
-        }
-}
+
     
