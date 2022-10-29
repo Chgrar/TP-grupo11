@@ -136,7 +136,7 @@ header ul{
         flex-wrap: wrap;
         }
     
-li{
+header li{
         margin: 0.5rem;
         background-color: gray;
         border-radius: 20%;
@@ -148,7 +148,7 @@ li{
         }
 /* // aqui se uso una transicion */
     
-li:hover{
+header li:hover{
         padding: 8px;
         transition-property: all;
         transition-duration: 0.1s;
@@ -162,23 +162,15 @@ header img{
         max-height: 5rem;
         }
     
-a{
+header a{
        text-decoration: none;
        color: white;
         }
     
-a:hover{color: black;
+header a:hover{color: black;
         border-radius: 10%;
         }
 
-.a-contact{
-    color: white;
-}
-
-.a-contact:hover{
-    color: black;
-    border-radius: 10%;
-}
 
 .center{
     text-align: center;
