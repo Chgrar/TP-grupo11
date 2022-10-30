@@ -76,9 +76,7 @@ h3{
     margin: 5px;
    }
 
-#map{
-    align-items: center;
-    }
+
 
 header p{
     color: white;
@@ -194,8 +192,20 @@ footer p{
 
 footer a{
         padding: 4px;
-        }
-    
+}
+
+@media screen and (max-width:640px){
+    .grid-item{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .grid-container{
+        grid-template-columns: 90%;             
+    }
+    #cont_6426a9c3f966cf684a6b4cbee005ed3a{
+        width: 10px;
+    }
+}
 
 
     
